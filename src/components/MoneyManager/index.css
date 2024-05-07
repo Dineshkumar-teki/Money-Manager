@@ -1,0 +1,132 @@
+/* Write your CSS here */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.bgContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2.5rem;
+  min-height: 100vh;
+}
+.moneyManageContainer {
+  width: 80%;
+}
+.topSection {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/money-manager/money-manager-bg.png');
+  background-size: cover;
+  background-position: center;
+  padding: 3rem 2.2rem;
+  border-radius: 10px;
+}
+.topSection span {
+  color: #0b69ff;
+  font-size: 18px;
+}
+.bottomLeftSideConatiner {
+  width: 40%;
+  border: 1.5px solid #cbd5e1;
+  border-radius: 15px;
+  padding: 2.5rem 1.8rem;
+  box-shadow: 0 4px 16px 0 lightgrey;
+  display: flex;
+  flex-direction: column;
+}
+.formTitle {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+form label {
+  color: #334155;
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+form input,
+form select {
+  padding: 5px;
+  font-size: 18px;
+  outline: none;
+  border-radius: 5px;
+  border: 0.8px solid;
+  margin-bottom: 1rem;
+  background-color: transparent;
+}
+.Addbtn {
+  background-color: #0b69ff;
+  color: white;
+  border: 0 solid;
+  outline: none;
+  border-radius: 10px;
+  padding: 8px 15px;
+  font-size: 16px;
+  width: 30%;
+}
+.bottomRightSideConatiner {
+  width: 55%;
+  border: 1.5px solid #cbd5e1;
+  border-radius: 15px;
+  padding: 2.5rem 1.8rem;
+  box-shadow: 0 4px 16px 0 lightgrey;
+  display: flex;
+  flex-direction: column;
+}
+.bottomSection {
+  display: flex;
+  justify-content: space-between;
+}
+.historyCard {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+}
+.headings {
+  display: flex;
+  gap: 5.7rem;
+  padding: 1.2rem;
+}
+.headings p {
+  font-size: 18px;
+  font-weight: 600;
+}
+ul{
+  list-style-type: none;
+}
+@media (max-width: 768px) {
+  .bgContainer {
+    padding: 1rem;
+  }
+  .bottomSection {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .moneyManageContainer {
+    width: 90%;
+  }
+  .topSection {
+    text-align: center;
+  }
+  .bottomLeftSideConatiner {
+    width: 100%;
+  }
+  .bottomRightSideConatiner {
+    width: 100%;
+  }
+  .headings {
+    gap: 2.8rem;
+  }
+  .headings > p {
+    font-size: 12px;
+  }
+  .formTitle {
+    font-size: 25px;
+  }
+}
